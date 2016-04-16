@@ -1,0 +1,17 @@
+{
+  "name": "readme-boombox",
+  "version": "0.0.1",
+  "description": "A Slack integration for watching changes in readme (or any other critical file) under source control",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jayanth M S",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.13.4",
+    "gitexec": "^1.0.0",
+    "request": "^2.71.0"
+  }
+}
