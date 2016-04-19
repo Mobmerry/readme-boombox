@@ -1,14 +1,15 @@
 var app     = require('express')();
 var gitexec = require('gitexec');
-var config  = require('./config');
 var request = require('request');
+
+var config  = require('./config');
 
 app.post('/notify-slack', function (req, res) {
   // handle errors that will be in return Stream object
   gitexec.exec(config.repoPath, config.gitFetchCommand);
   gitexec.exec(config.repoPath, config.gitRebaseCommand);
 
-  gitexec.execCollect(config.repoPath, config.gitDiffCommand, function(err, response) {
+  gitexec.execCollect(config.repoPath, config.gitDiffCommand, function (err, response) {
     if (err) {
       // handle this error and bail
     }

@@ -1,7 +1,7 @@
 {
   "name": "readme-boombox",
   "version": "0.0.1",
-  "description": "A Slack integration for watching changes in readme (or any other critical file) under source control",
+  "description": "A Slack bot written in node + express which shouts out to a group if anything in The Great API Bible changes",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
