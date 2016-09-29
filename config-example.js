@@ -8,7 +8,7 @@ config.slackApiToken    = "";
 
 config.gitFetchCommand  = "git fetch";
 config.gitRebaseCommand = "git rebase " + config.remoteName + config.watchingBranch;
-config.gitDiffCommand   = "git diff HEAD HEAD^ " + watchingFilePath;
+config.gitDiffCommand   = "git diff -U15 HEAD HEAD^ " + watchingFilePath;
 
 config.port = 3000;
 
